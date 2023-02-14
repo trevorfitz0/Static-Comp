@@ -1,11 +1,12 @@
 
 :root {
     --side-font-color: #8c8d8f;
-    --font-color: #afaeac;
+    --font-color: #dad9d7;
     --back-color: #DCE1E9;
     --nav-color: #2B2D42;
     --highlight-color: #387D7A;
     --break-color: #C0C2C6;
+    --font: 'Poppins', sans-serif;
 }
 
 * {
@@ -14,6 +15,7 @@
     outline: none;
     border: none;
     text-decoration: none;
+    font-family: var(--font);
 }
 
 body {
@@ -25,7 +27,7 @@ nav {
     background-color: var(--nav-color);
     color: var(--font-color);
     height: 100%;
-    width: 200px;
+    width: 250px;
     display: flex;
     flex-direction: column;
 }
@@ -34,6 +36,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
 }
 
 .face {
@@ -44,8 +47,8 @@ nav {
 
 .break-line {
     color: var(--break-color);
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     border-top: 3px solid #bbb;
 }
 
