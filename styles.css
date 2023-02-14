@@ -1,0 +1,84 @@
+
+:root {
+    --side-font-color: #8c8d8f;
+    --font-color: #dad9d7;
+    --back-color: #DCE1E9;
+    --nav-color: #2B2D42;
+    --nav-highlight-color: #4d5073;
+    --highlight-color: #387D7A;
+    --break-color: #C0C2C6;
+    --font: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: var(--font);
+    list-style-type: none;
+}
+
+body {
+    background: var(--back-color);
+}
+
+nav {
+    position: absolute;
+    background-color: var(--nav-color);
+    color: var(--font-color);
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.face {
+    height: 8vh;
+    width: auto;
+    padding-bottom: 10px;
+}
+
+.break-line {
+    color: var(--break-color);
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border-top: 3px solid #bbb;
+}
+
+p {
+    color: var(--side-font-color);
+    font-weight: lighter;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+li {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.pages li:hover {
+    background-color: var(--nav-highlight-color);
+    border-left: .5vw solid var(--highlight-color);
+}
+
+.icon {
+    filter: invert(100%);
+    height: 1vh;
+    margin-right: 1vw;
+}
+
+.checkmark {
+    padding-right: 1vw;
+}
