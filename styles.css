@@ -1,8 +1,11 @@
 
 :root {
+    --side-font-color: #8c8d8f;
+    --font-color: #afaeac;
     --back-color: #DCE1E9;
-    --nav-color: #2F2F2F;
+    --nav-color: #2B2D42;
     --highlight-color: #387D7A;
+    --break-color: #C0C2C6;
 }
 
 * {
@@ -19,21 +22,55 @@ body {
 
 nav {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
     background-color: var(--nav-color);
-    color: var(--back-color);
+    color: var(--font-color);
     height: 100%;
     width: 200px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .face {
-    height: 5%;
-    padding-top: 20px;
+    height: 8vh;
+    width: auto;
     padding-bottom: 10px;
-    border-radius: 50%;
 }
 
+.break-line {
+    color: var(--break-color);
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    border-top: 3px solid #bbb;
+}
+
+p {
+    color: var(--side-font-color);
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tabs {
+    margin: 20px;
+}
+
+.icon {
+    filter: invert(100%);
+    height: 1.5vh;
+    margin-right: 1vw;
+}
