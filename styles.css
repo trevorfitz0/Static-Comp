@@ -4,6 +4,7 @@
     --font-color: #dad9d7;
     --back-color: #DCE1E9;
     --nav-color: #2B2D42;
+    --nav-highlight-color: #4d5073;
     --highlight-color: #387D7A;
     --break-color: #C0C2C6;
     --font: 'Poppins', sans-serif;
@@ -16,6 +17,7 @@
     border: none;
     text-decoration: none;
     font-family: var(--font);
+    list-style-type: none;
 }
 
 body {
@@ -47,8 +49,8 @@ nav {
 
 .break-line {
     color: var(--break-color);
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     border-top: 3px solid #bbb;
 }
 
@@ -56,20 +58,19 @@ p {
     color: var(--side-font-color);
     font-weight: lighter;
     font-size: 15px;
-}
-
-ul {
-    list-style-type: none;
+    padding-left: 20px;
 }
 
 li {
     margin: 10px 0;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
+    padding-left: 20px;
 }
 
-.tabs {
-    margin: 20px;
+li:hover {
+    background-color: var(--nav-highlight-color);
+    border-left: .5vw solid var(--highlight-color);
 }
 
 .icon {
