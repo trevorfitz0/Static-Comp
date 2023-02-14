@@ -64,17 +64,18 @@ p {
 li {
     margin: 10px 0;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
     padding-left: 20px;
 }
 
-li:hover {
+.pages li:hover {
     background-color: var(--nav-highlight-color);
     border-left: .5vw solid var(--highlight-color);
 }
 
 .icon {
     filter: invert(100%);
-    height: 1.5vh;
+    height: 1vh;
     margin-right: 1vw;
 }
+
