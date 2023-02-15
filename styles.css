@@ -8,6 +8,7 @@
     --highlight-color: #387D7A;
     --break-color: #C0C2C6;
     --font: 'Poppins', sans-serif;
+    --nav-header-margin: 25vw;
 }
 
 * {
@@ -24,44 +25,46 @@ body {
     background: var(--back-color);
 }
 
+/* navbar */
+
 nav {
     position: absolute;
     background-color: var(--nav-color);
     color: var(--font-color);
     height: 100%;
-    width: 250px;
+    width: var(--nav-header-margin);
     display: flex;
     flex-direction: column;
 }
 
-.head {
+nav .head {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
 }
 
-.face {
+nav .face {
     height: 8vh;
     width: auto;
     padding-bottom: 10px;
 }
 
-.break-line {
+nav .break-line {
     color: var(--break-color);
     margin-top: 1vh;
     margin-bottom: 1vh;
     border-top: 3px solid #bbb;
 }
 
-p {
+nav p {
     color: var(--side-font-color);
     font-weight: lighter;
     font-size: 15px;
     padding-left: 20px;
 }
 
-li {
+nav li {
     margin: 10px 0;
     font-weight: bold;
     font-size: 18px;
@@ -73,7 +76,7 @@ li {
     border-left: .5vw solid var(--highlight-color);
 }
 
-.icon {
+nav .icon {
     filter: invert(100%);
     height: 1vh;
     margin-right: 1vw;
@@ -81,4 +84,58 @@ li {
 
 .checkmark {
     padding-right: 1vw;
+}
+
+/* header */
+
+header {
+    position: absolute;
+    margin-left: var(--nav-header-margin);
+    background-color: var(--back-color);
+    color: var(--font-color);
+    border-bottom: .2vh solid var(--break-color);
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .first-icon {
+    height: 2vh;
+    margin-left: 2vw;
+}
+
+header .icon {
+    height: 2vh;
+    margin-left: 2vw;
+}
+header .icon:hover {
+    background-color: var(--highlight-color);
+}
+
+header .break-line {
+    color: var(--break-color);
+    margin-left: 2vh;
+    border-right: 2px solid #bbb;
+    height: 100%;
+}
+
+.search {
+    width: 40vw;
+    height: 100%;
+    margin-left: .5vw;
+}
+
+.search-icon {
+    margin-left: 2vw;
+    margin-top: .6vh;
+    height: 1.5vh;
+    filter: invert(50%);
+}
+
+header input {
+    width: 40vw;
+    padding: 10px;
+    border: 0;
+    background: transparent;
 }
